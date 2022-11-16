@@ -2,62 +2,43 @@ import React from 'react'
 import Laptop from './assets/laptop.jpg';
 
 const Portfolio = () => {
-    return (
-        <div className='w-full bg-[#EEEDE7] py-30 px-20'>
-            <h1 className='text-7xl text-center'>PORTFOLIO</h1>
-            <p className='text-center'>shdakjubz  djhdiojdohugdakjuihusc hsjjjnchbzixnzbhcb hopashdjndadhhsha</p>
-            <div class="grid grid-cols-4 gap-4 py-10 px-10">
-                <div className='w-full bg-[#FFF]'>
-                    <img src={Laptop} alt='bos' />
-                    <h3>Project One</h3>
-                    <p>
-                        <span>HTML5</span>
-                        <span>CSS</span>
-                        <span>Javascript</span>
-                        <span>React</span>
+  return (
+    <div className='w-full bg-[#EEEDE7] py-16 px-20'>
+      <div className='w-full bg-[#FFF] py-10 px-10'>
+        <div className='max-w-[1240px] mx-auto grid md:grid-cols-2'>
+          <div className='pr-11 pl-5'>
 
-                    </p>
-                </div>
+            <div className='w-full bg-[#FFF]'>
+              <img src={Laptop} alt='bos' />
+              <h3>Project One</h3>
+              <p>
+                <span>HTML5</span>
+                <span>CSS</span>
+                <span>Javascript</span>
+                <span>React</span>
 
-
-                <div className='w-full bg-[#FFF]'>
-                    <img src={Laptop} />
-                    <h3>Project One</h3>
-                    <p>
-                        <span>HTML5</span>
-                        <span>CSS</span>
-                        <span>Javascript</span>
-                        <span>React</span>
-
-                    </p>
-                </div>
-
-                <div className='w-full bg-[#FFF]'>
-                    <img src={Laptop} />
-                    <h3>Project One</h3>
-                    <p>
-                        <span>HTML5</span>
-                        <span>CSS</span>
-                        <span>Javascript</span>
-                        <span>React</span>
-
-                    </p>
-                </div>
-
-                <div className='w-full bg-[#FFF]'>
-                    <img src={Laptop} />
-                    <h3>Project One</h3>
-                    <p>
-                        <span>HTML5</span>
-                        <span>CSS</span>
-                        <span>Javascript</span>
-                        <span>React</span>
-
-                    </p>
-                </div>
+              </p>
             </div>
+          </div>
+
+          <div className='w-full bg-[#FFF] pr-11 pl-5'>
+            <img src={Laptop} />
+            <h3>Project One</h3>
+            <p>
+              <span>HTML5</span>
+              <span>CSS</span>
+              <span>Javascript</span>
+              <span>React</span>
+
+            </p>
+          </div>
         </div>
-    )
+
+      </div>
+
+    </div>
+  )
 }
 
 export default Portfolio
+
