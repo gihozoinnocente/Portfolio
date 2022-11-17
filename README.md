@@ -1,2 +1,3 @@
-# Portfolio
-This is my personal portfolio
+# React Portfolio App
+
+Completed React Admin Dashboard Repo
