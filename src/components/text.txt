@@ -1,0 +1,1 @@
+w-full h-screen mx-auto text-center

@@ -16,7 +16,6 @@ const Portfolio = () => {
                 <span>CSS</span>
                 <span>Javascript</span>
                 <span>React</span>
-
               </p>
             </div>
           </div>
@@ -29,7 +28,6 @@ const Portfolio = () => {
               <span>CSS</span>
               <span>Javascript</span>
               <span>React</span>
-
             </p>
           </div>
         </div>
