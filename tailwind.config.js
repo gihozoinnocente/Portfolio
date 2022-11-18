@@ -5,13 +5,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "light-blue":"#90e0ef",
+        "verydeep-blue":"#0077b6",
         "deep-blue": "#010026",
         blue: "#2CBCE9",
-        red: "#DC4492",
+        red: "#FFF",
         yellow: "#FDCC49",
         grey: "#ededed",
        "dark-grey": "#757575",
-        "opaque-black": "rgba(0,0,0,0.35)",
+       "light-gray": "#EEEDE7",
+       white: "#FFF"
+      //   "opaque-black": "rgba(0,0,0,0.35)",
       },
       backgroundImage: (theme) => ({
         "gradient-rainbow":

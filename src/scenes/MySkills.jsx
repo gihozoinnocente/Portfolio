@@ -2,13 +2,137 @@ import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
-const MySkills = () => {
+const MySkills = ({ progressPercentage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
-    <section id="skills" className="pt-10 pb-24">
+    <section id="skills" className="bg-light-gray pt-20">
       {/* HEADER AND IMAGE SECTION */}
-      <div className="md:flex md:justify-between md:gap-16 mt-32">
-        <motion.div
+      
+      <div className="md:flex md:justify-between md:gap-16 mr-20 ml-20 bg-white  px-16 ">
+        <div className='w-11/12 pr-11 pl-5'>
+          <div className='pb-5'>
+            <h2>HTML5</h2>
+            <div className='h-1 w-full bg-light-blue'>
+
+              <div
+                style={{ width: `${98}%` }}
+                className={`h-full ${progressPercentage < 70 ? 'bg-red-600' : 'bg-verydeep-blue'}`}>
+              </div>
+            </div>
+          </div>
+
+          <div className='pb-5'>
+            <h2>CSS3</h2>
+            <div className='h-1 w-full bg-light-blue'>
+
+              <div
+                style={{ width: `${95}%` }}
+                className={`h-full ${progressPercentage < 70 ? 'bg-red-600' : 'bg-verydeep-blue'}`}>
+              </div>
+            </div>
+          </div>
+          <div className='pb-5'>
+            <h2>Tailwind CSS</h2>
+            <div className='h-1 w-full bg-light-blue'>
+
+              <div
+                style={{ width: `${80}%` }}
+                className={`h-full ${progressPercentage < 70 ? 'bg-red-600' : 'bg-verydeep-blue'}`}>
+              </div>
+            </div>
+          </div>
+
+          <div className='pb-5'>
+            <h2>Javascript</h2>
+            <div className='h-1 w-full bg-light-blue'>
+
+              <div
+                style={{ width: `${90}%` }}
+                className={`h-full ${progressPercentage < 70 ? 'bg-red-600' : 'bg-verydeep-blue'}`}>
+              </div>
+            </div>
+          </div>
+
+          <div className='pb-5'>
+            <h2>ReactJs</h2>
+            <div className='h-1 w-full bg-light-blue'>
+
+              <div
+                style={{ width: `${88}%` }}
+                className={`h-full ${progressPercentage < 70 ? 'bg-red-600' : 'bg-verydeep-blue'}`}>
+              </div>
+            </div>
+          </div>
+
+          <div className='pb-5'>
+            <h2>React Native</h2>
+            <div className='h-1 w-full bg-light-blue'>
+
+              <div
+                style={{ width: `${75}%` }}
+                className={`h-full ${progressPercentage < 70 ? 'bg-red-600' : 'bg-verydeep-blue'}`}>
+              </div>
+            </div>
+          </div>
+
+          <div className='pb-5'>
+            <h2>MongoDB</h2>
+            <div className='h-1 w-full bg-light-blue'>
+
+              <div
+                style={{ width: `${80}%` }}
+                className={`h-full ${progressPercentage < 70 ? 'bg-red-600' : 'bg-verydeep-blue'}`}>
+              </div>
+            </div>
+          </div>
+
+          <div className='pb-5'>
+            <h2>Postgres/MySQL</h2>
+            <div className='h-1 w-full bg-light-blue'>
+
+              <div
+                style={{ width: `${80}%` }}
+                className={`h-full ${progressPercentage < 70 ? 'bg-red-600' : 'bg-verydeep-blue'}`}>
+              </div>
+            </div>
+          </div>
+
+          <div className='pb-5'>
+            <h2>Typescript</h2>
+            <div className='h-1 w-full bg-light-blue'>
+
+              <div
+                style={{ width: `${80}%` }}
+                className={`h-full ${progressPercentage < 70 ? 'bg-red-600' : 'bg-verydeep-blue'}`}>
+              </div>
+            </div>
+          </div>
+
+          <div className='pb-5'>
+            <h2>NodeJS</h2>
+            <div className='h-1 w-full bg-light-blue'>
+
+              <div
+                style={{ width: `${80}%` }}
+                className={`h-full ${progressPercentage < 70 ? 'bg-red-600' : 'bg-verydeep-blue'}`}>
+              </div>
+            </div>
+          </div>
+
+          <div className='pb-5'>
+            <h2>Rest API</h2>
+            <div className='h-1 w-full bg-light-blue'>
+
+              <div
+                style={{ width: `${75}%` }}
+                className={`h-full ${progressPercentage < 70 ? 'bg-red-600' : 'bg-verydeep-blue'}`}>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        {/* <motion.div
           className="md:w-1/3"
           initial="hidden"
           whileInView="visible"
@@ -27,23 +151,40 @@ const MySkills = () => {
             Aliquam, amet dui feugiat facilisi dui. Aliquam aliquet integer ut
             fames odio in at.
           </p>
-        </motion.div>
+        </motion.div> */}
 
-        <div className="mt-16 md:mt-0">
-          {isAboveLarge ? (
+        <div className="">
+
+          <div className='flex flex-col justify-center'>
+            <h1 className='md:text-4xl sm:text-3xl text-2xl font-bold py-2'>About Me</h1>
+            <p>
+              I'm an Experienced full stuck software developer with expertise in design,
+              UI/UX, installation, testing and maintenance of sotware systems
+              with over one year of experience as a junior software
+              engineer.I completed 3months internship with Mobile development at Justice Bot,
+              where I honed my mobile app development skills.In addition to that I' m a certified
+              software tester.
+            </p>
+            {/* <button className='bg-black text-[#0000FF] w-[200px] rounded-md font-medium my-6 mx-auto md:mx-0 py-3'>Get Started</button> */}
+          </div>
+
+          {/* {isAboveLarge ? (
             <div
               className="relative z-0 ml-20 before:absolute before:-top-10 before:-left-10
               before:w-full before:h-full before:border-2 before:border-blue before:z-[-1]"
             >
-              <img
+
+
+               <img
                 alt="skills"
                 className="z-10"
                 src="assets/skills-image.png"
               />
             </div>
           ) : (
-            <img alt="skills" className="z-10" src="assets/skills-image.png" />
-          )}
+            <img alt="skills" className="z-10" src="assets/skills-image.png" /> 
+          )
+          } */}
         </div>
       </div>
 
