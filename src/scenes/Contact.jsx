@@ -288,8 +288,8 @@ const Contact = () => {
         </div>
 
         <div className='flex flex-col justify-center'>
-          <h1 className='text-2xl mb-2'>Get In Touch</h1>
-          <p>Whether you want to get in touch, talk about a project collaboration, or just say hi, I'd love to hear from you.
+          <h1 className='text-xl mb-1'>Get In Touch</h1>
+          <p className="mr-12 text-center">Whether you want to get in touch, talk about a project collaboration, or just say hi, I'd love to hear from you.
             Simply fill the from and send me an email.</p>
 
           <div className='flex mt-5 gap-7'>

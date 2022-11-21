@@ -282,7 +282,7 @@ const MySkills = ({ progressPercentage }) => {
       <section id="skills" className="bg-light-gray pt-20">
       {/* HEADER AND IMAGE SECTION */}
       
-      <div className="md:flex md:justify-between md:gap-16 mr-5 ml-5 pt-5 pb-5 bg-white  px-16 ">
+      <div className="md:flex md:justify-between md:gap-16 mr-5 ml-5 pt-5 pb-5 bg-white px-5">
         <div className='w-11/12 pr-11 pl-5'>
           <div className='pb-5'>
             <h2>HTML5</h2>
