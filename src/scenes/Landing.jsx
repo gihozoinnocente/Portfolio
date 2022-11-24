@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import videoBg from '../assets/videoBg.mp4';
 import Typed from 'react-typed';
+import InnocenteGIHOZOCV from '../assets/InnocenteGIHOZOCV.pdf'
+import { Document,Page } from '@react-pdf/renderer';
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
@@ -12,13 +14,9 @@ const Landing = ({ setSelectedPage }) => {
       id="home"
       className="main"
     >
-
       <video src={videoBg} autoPlay loop muted />
-
-    
-
       <div className="content">
-      
+
         {/* MAIN TEXT */}
         <div className="z-30 basis-2/5 mt-12 md:mt-32">
           {/* HEADINGS */}
@@ -37,7 +35,7 @@ const Landing = ({ setSelectedPage }) => {
             </p>
 
             <Typed
-              className='md:text-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2'
+              className='md:text-5xl sm:text-4xl font-bold md:pl-4 pl-2 text-center'
               strings={['Front End Developer', 'Back End Developer', 'Quality Assurance']}
               typeSpeed={180}
               backSpeed={140}
@@ -57,14 +55,20 @@ const Landing = ({ setSelectedPage }) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <AnchorLink
+            <button className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
+              hover:bg-blue hover:text-white transition duration-500">
+              <a href="InnocenteGIHOZO.pdf" download="InnocenteGIHOZOCV InnocenteGIHOZO.pdf">
+                <button className="btn highlighted-btn">Get Resume</button>
+              </a>
+            </button>
+            {/* <AnchorLink
               className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold
               hover:bg-blue hover:text-white transition duration-500"
               onClick={() => setSelectedPage("contact")}
               href="#contact"
             >
-              Contact Me
-            </AnchorLink>
+              contact
+            </AnchorLink> */}
             <AnchorLink
               className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
               onClick={() => setSelectedPage("contact")}
